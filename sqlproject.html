@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="source/project.css">
+    <script src="https://kit.fontawesome.com/898068a3a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!--nav setion -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="source/Images/D..png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <!-- <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" id="closeBtn" ></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="openBtn"></i>
+    
+                </nav>
+                <div class="header-text">
+                    <h3>Sample <span>SQL</span> Procjects</h3>
+                    <hr class="divider" />
+                </div>
+            </div> 
+        </div>
+        <!--Nav section END here -->
+        <!--Content-->
+    <div id="project">
+        <div class="container">
+            <div class="content2">
+                <h3 class="title">YELLEVATE CUSTOMER DISPUTE ANALYSIS</h3>
+                <h5>Data cleaning and verification for Yellevate Customer Disputes Analysis</h5>
+                <p>An e-commerce company from Brazil, 
+                    has requested a complete analysis of their operating performance. They want a 
+                    detailed report covering three main parts: general dashboard, delivery performance, 
+                    and product quality. Based on this analysis report, the company’s management will 
+                    decide the future development of the business.
+                </p>
+            </div>   
+            <div class="column">
+                <div class="col">
+                    <h5>Goal</h5>
+                    <ul>
+                        <li>The processing time in which Invoices are settled (average # of days rounded to a whole number).</li>
+                        <li>The processing time for the company to settle disputes (average # of days rounded to a whole number).</li>
+                        <li>Percentage of disputes received by the company that w ere lost (within two decimal places).</li>
+                        <li>Percentage of revenue lost from disputes (within two decimal places).</li>
+                        <li>The country where the company reached the highest losses from lost disputes (in USD).</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Query</h5>
+                    <ul>
+                        <li>SELECT
+                            ROUND(AVG(days_to_settled)) AS invoice_avg_days_settled
+                            FROM yellevate_invoices; </li>
+                        <li>SELECT
+                            ROUND(AVG(days_to_settled)) AS dispute_ave_days_settled
+                            FROM yellevate_invoices
+                            WHERE disputed = 1;</li>
+                        <li>SELECT (ROUND(100*((SELECT SUM(dispute_lost)
+                            FROM yellevate_invoices
+                            WHERE dispute_lost = 1) / 
+                            (SELECT SUM(disputed)
+                            FROM yellevate_invoices) ),2)) || '%' AS percent_dispute_lost;</li>
+                        <li>SELECT (ROUND(100*(
+                            (SELECT SUM(invoice_amount_usd)
+                            FROM yellevate_invoices
+                            WHERE dispute_lost = 1) / 
+                            (SELECT SUM(invoice_amount_usd)
+                            FROM yellevate_invoices)),2)) || '%' AS percent_revenue_lost;</li>
+                        <li>SELECT country,
+                            SUM(invoice_amount_usd):: MONEY AS total_losses
+                            FROM yellevate_invoices
+                            WHERE dispute_lost = 1
+                            GROUP BY country
+                            ORDER BY total_losses DESC;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col"><img src="source/Images/sql4.JPG"></div>
+                <div class="col"><img src="source/Images/sql5.JPG"></div>
+                <div class="col"><img src="source/Images/sql6.JPG"></div>
+                <div class="col"><img src="source/Images/sql7.JPG"></div>
+                <div class="col"><img src="source/Images/sql8.JPG"></div>
+            </div>
+
+
+            <!---Extra projects-->
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">Other sample query</h3>
+                    <h5>Problem</h5>
+                    <p>
+                        --EARNED TOTAL REVENUE FROM 2020 TO 2021, GET THEIR PERCENTAGE ALSO.
+                        * EXPECTED OUTPUT:  4 COLUMNS
+                        * 2020, 2021,
+                    </p>
+                    <ul>
+                        <li>Nested function </li>
+                        <li>Join query</li>
+                        
+                    </ul>
+                </div>
+                <div class="image-box">
+                    <img src="source/Images/sql9.JPG">
+                </div> 
+                <div class="content">
+                    <h5>Problem</h5>
+                    <p>
+                        A single select statement with regard to following,
+                    </p>
+                    <ul>
+                        <li>Unique show_id </li>
+                        <li>Make each word in director and country columns start with a capital letter</li>
+                        <li>Concatenate rating_1 and rating_2 with'-' between into a single column and name it as rating</li>
+                        <li>add title_type conditional column from the previous task to your select statement</li>
+                        <li>You have noticed that we have our month_added coded with integers make it reading-friendly using conditional case structure, so that 1 turn jan, 2 turns feb etc.</li>
+                    </ul>
+                </div>
+                <div class="image-box">
+                    <img src="source/Images/sql10.JPG">
+                </div> 
+            </div>
+        </div>
+    </div>
+         <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <!-- <h1 class="sub-title">Contact Me</h1> -->
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>daavviidd21@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>09634135590</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="btnUp">
+            <i class="fa-solid fa-arrow-up" id="up"></i>
+        </div>
+        <!--End contacts-->
+
+
+        <div class="copyright">
+            <p>Copyright © Dave Merino </p>
+        </div>
+    </div>
+
+        <script src="source/index.js"></script>
+</body>
+</html>

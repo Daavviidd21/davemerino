@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="source/project.css">
+    <script src="https://kit.fontawesome.com/898068a3a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!--nav setion -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="source/Images/D..png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <!-- <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" id="closeBtn" ></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="openBtn"></i>
+    
+                </nav>
+                <div class="header-text">
+                    <h3>Sample <span>Excel</span> Procjects</h3>
+                    <hr class="divider" />
+                </div>
+            </div> 
+        </div>
+        <!--Nav section END here -->
+        <!--Content-->
+    <div id="project">
+        <div class="container">
+            <!--1st excel project-->
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">YELLEVATE Project</h3>
+                    <h5>Problem</h5>
+                    <p><b>Client disputes:</b> defined as clients expressing dissatisfaction with the 
+                        company’s services and refusing to pay for them. Almost 20% of the disputes
+                        raised have resulted in a payment opt-out, which has led to an approximate 
+                        5% (in USD) annual loss in revenue.
+                    </p>
+                    <ul>
+                        <li>Identify the problems facing the business and come up with 
+                            objectives that can solve them with data analysis</li>
+                        <li>Set data analysis goals according to these business objectives</li>
+                        <li>Conduct data analysis by loading a .csv file in SQL to perform the necessary data cleaning.</li>
+                    </ul>
+                    <a href="source/file/yellevateproject.xlsx" download class="btn btn2">Download Excel file</a>
+                </div>
+                <div class="image-box">
+                    <img src="source/Images/Excelpic3.JPG">
+                </div>
+            </div>
+            <!--end 1st excel project-->
+
+            <!--2nd Excel Project-->
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">Online Shopping Dashboard</h3>
+                    <h5>Problem</h5>
+                    <p><b>Scenario:</b> Client requires a report that summarizes the performance of their company
+                        in terms of its Revenue, Sale, Customer Satisfaction and Website performance
+                    </p>
+                    <ul>
+                        <li><b>Financial Viability:</b>Revenue, Net Income, Revenue per item sold and generated per City </li>
+                        <li><b>Website Performance:</b>Bounce Rate, Total Monthly Page Views</li>
+                        <li><b>Customer Satisfaction:</b>Customer Satisfaction Index and Net Promoter Score</li>
+                    </ul>
+                    <a href="source/file/BMProject.xlsx" download class="btn btn2">Download Excel file</a>
+                </div>
+                <div class="image-box">
+                    <img src="source/Images/Excelpic.png">
+                </div>
+            </div>
+            <!--End 2nd project-->
+        </div>
+    </div>
+         <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <!-- <h1 class="sub-title">Contact Me</h1> -->
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>daavviidd21@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>09634135590</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="btnUp">
+            <i class="fa-solid fa-arrow-up" id="up"></i>
+        </div>
+        <!--End contacts-->
+
+
+        <div class="copyright">
+            <p>Copyright © Dave Merino </p>
+        </div>
+    </div>
+
+        <script src="source/index.js"></script>
+</body>
+</html>

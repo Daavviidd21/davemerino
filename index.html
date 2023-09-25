@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="D..png">
+    <title>Dave's Portfolio</title>
+    <link rel="stylesheet" href="source/style.css">
+    <script src="https://kit.fontawesome.com/898068a3a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--nav setion -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="source/Images/D..png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="closeBtn" ></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="openBtn"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Dave</span> </h1>
+            </div>
+        </div> 
+    </div>
+    <!--Nav section END here -->
+
+
+    <!--------------------about------------------>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="source/Images/FB_IMG_1681592145456 (2).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm <b>DAVE B MERINO</b> I hold a Bachelor Degree in 
+                        Bacholer of Sceince In Information Technology</b>
+                        Since before college I love complex things and I'm very curious on how system and technology works 
+                        thats why I decided to get BSIT course, but unfortunately land a technical field, then years back 
+                        I decided to take Data Analytics course, since that Data Analytics is related with IT technically
+                        because of using MySQL and Phyton and other IT tools for data mining, cleaning, and visualizations.
+                    </p>
+                    <!--Active link tab (section where you can click links)-->
+                    <div class="tab-titles">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                    </div>
+                    <!--Active links end here -->
+                    <!--Tab contebts -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Dev(front end)</span><br>HTML,CSS,JS</li>
+                            <li><span>Data Analytics</span><br>ETL,data mining,<br> cleaning, and visualizations.</li>
+                            <li><span>Computer Hardware/Software</span><br>Basic troubleshooting and maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>October 2020 - Present</span><br>TECHNICAL SUPPORT ANALYST</li>
+                            <li><span>July 2019 - January 2020</span><br>IT ASSISTANT</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in Information Technology</span><br>University of Rizal System</li>
+                            <li><span>Data Analytics</span><br>Refocus Digital Academy</li>
+                            
+                        </ul>
+                    </div>
+                    <!--tab contents END here -->
+                 
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!--END about -->
+
+    <!-----My Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-file-excel"></i>
+                    <h2>Excel</h2>
+                    <p>
+                        Here is my sample visualization, datacleaning and manipulation that I did, using excel
+                    </p>
+                    <a href="excelproject.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>
+                        SQL to clean and manupilate data,
+                        check my sample data cleaning and manupilation using SQL queries.
+                    </p>
+                    <a href="sqlproject.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
+                    <h2>Power BI</h2>
+                    <p>
+                        Basic/Fundamentals on visualization, DAX, and power query using POWER BI, click the buton and find out.
+                    </p>
+                    <a href="BIproject.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Dev.</h2>
+                    <p>
+                        I have also a knowledge on web development, using HTML, CSS and JS. You can click below to check some of my samples
+                    </p>
+                    <a href="webproject.html">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--END Services -->
+
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="source/Images/Py.PNG">
+                    <div class="layer">
+                        <h3>Hotel Booking Cancellations</h3>
+                        <p>You've been assigned by your manager to provide insights 
+                            on the recent rise of hotel booking cancellations in both hotels 
+                            for the past few months. These events causes the management to 
+                            suffer financial losses and they would like to know some leads on 
+                            reasons why customers cancel their room reservations.</p>
+                        <a href="https://colab.research.google.com/drive/1zuQo51UAy5Rs0z0WoWEL8CJX3aIy-Q6P#scrollTo=4AOYM2Qp3nmF"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="source/Images/Excelpic.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping Dashboard</h3>
+                        <p>This Excel Project is showing my Dashboard creation, lookup function 
+                            and pivot table skills.</p>
+                        <a href="excelproject.html#project"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="source/Images/Excelpic2.png" alt="">
+                    <div class="layer">
+                        <h3>YELLEVATE CUSTOMER DISPUTE ANALYSIS</h3>
+                        <p>This Excel Project is actually given by a mentor from bootcamp.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="source/Images/PBIfooddev.png" alt="">
+                    <div class="layer">
+                        <h3>Food Delivery Dashboar</h3>
+                        <p>Client requires a report that show the average deliver time 
+                            for type of products and weather condition</p>
+                        <a href="BIproject.html#project"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="source/Images/PBIFtask.png" alt="">
+                    <div class="layer">
+                        <h3>E-commmerce company</h3>
+                        <p>An e-commerce company from Brazil, 
+                            has requested a complete analysis of their operating performance. They want a 
+                            detailed report covering three main parts: general dashboard, delivery performance, 
+                            and product quality. Based on this analysis report, the company’s management will 
+                            decide the future development of the business.</p>
+                        <a href="BIproject.html#project"><i class="fa-solid fa-link"></i></a>    
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!--End Porfolio-->
+ <!--Cert -->
+ <div class="certificate">
+    <div class="container">
+        <h1 class="sub-title">Certificates </h1>
+        <div class="certrow">
+           <div class="cert-right">
+                <img src="source/Images/cert1pic.png" />
+           </div>
+           <div class="cert-left">
+                <img src="source/Images/cert2pic.png" />
+           </div>
+       </div>
+   </div>
+</div>
+<!--End cert -->
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <!-- <h1 class="sub-title">Contact Me</h1> -->
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>daavviidd21@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>09953458131</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/daavviidd21/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/daveedavidd?" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/davedavid2021?" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/dave-merino-81bb59186/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="btnUp">
+            <i class="fa-solid fa-arrow-up" id="up"></i>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © Dave Merino </p>
+        </div>
+    </div>
+    
+
+    
+<script src="source/index.js"></script>
+
+</body>
+</html>

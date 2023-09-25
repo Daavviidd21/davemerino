@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="source/project.css">
+   
+    <script src="https://kit.fontawesome.com/898068a3a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!--nav setion -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="source/Images/D..png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <!-- <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" id="closeBtn" ></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="openBtn"></i>
+    
+                </nav>
+                <div class="header-text">
+                    <h3>Sample <span>Website</span> Procjects</h3>
+                    <hr class="divider" />
+                    <p></p>
+                </div>
+            </div> 
+        </div>
+        <!--Nav section END here -->
+        <!--Content-->
+    <div id="webproject">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <!-- <i class="fa-sharp fa-solid fa-file-excel"></i> -->
+                    <h2>JS Animation</h2>
+                    <p>
+                        Here is my sample of Javascript animation, I created a webbase floppybird game
+                    </p>
+                    <a href="FlappybirdGame/flappy.html" target="_blank" rel="noopener noreferrer">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-sharp fa-solid fa-database"></i> -->
+                    <h2>JS fetch API</h2>
+                    <p>
+                        This is a sample on using fetch for http request, 
+                        I created a webbase where you can search 2 movies to compare
+                    </p>
+                    <a href="movies/index.html" target="_blank" rel="noopener noreferrer">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Web Page.</h2>
+                    <p>
+                         My web page sample is my web page portfolio
+                    </p>
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+         <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <!-- <h1 class="sub-title">Contact Me</h1> -->
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>daavviidd21@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>09634135590</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="btnUp">
+            <i class="fa-solid fa-arrow-up" id="up"></i>
+        </div>
+        <!--End contacts-->
+
+
+        <div class="copyright">
+            <p>Copyright © Dave Merino </p>
+        </div>
+    </div>
+       
+        <script src="source/index.js"></script>
+</body>
+</html>
